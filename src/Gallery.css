@@ -1,0 +1,91 @@
+.content{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(19, 19, 19);
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.preView{
+    width: 70vw;
+    height: 720px;
+    /* border:1px solid white; */
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.swiper-button-prev{
+  position: absolute;
+  top: 30vh;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: scale(1);
+  opacity: 0.2;
+	transform: scale(1);
+	-webkit-transition: .1s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.swiper-button-prev:hover{
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.swiper-button-next{
+  position: absolute;
+  top: 30vh;
+  right: 0px;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: scale(1);
+  opacity: 0.2;
+	transform: scale(1);
+	-webkit-transition: .1s ease-in-out;
+	transition: .3s ease-in-out;
+  /* border:1px solid white; */
+}
+.swiper-button-next:hover{
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.slide{
+  width: 334px;
+  height: 500px;
+  /* background-color: white; */
+  /* border:1px solid white; */
+  /* box-shadow: 5px 5px 30px 5px, -5px -5px 30px 5px ; */
+}
+/* 정렬 버튼 */
+.sort{
+  margin: 30px;
+  /* border-radius: 60px; */
+  /* opacity: 0.5; */
+  position: fixed;
+  top: 0px;  
+  right: 0px;
+  display: inline-block;
+  
+}
+.img_view{
+  width: 60px;
+  height: 60px;
+  position:relative;
+  /* border: 1px solid white; */
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img_view>img{
+  width:50px;
+  height: 50px;
+}
+.all{
+  transition: all ease 1s;
+}
+.all:hover{
+  transform: rotate( 90deg );
+}

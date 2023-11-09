@@ -1,0 +1,107 @@
+/* 메인 헤더 css */
+header{
+  position: fixed;
+  top: 0;
+  width: 1920px;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 10px;
+}
+
+.text_logo{
+  position: absolute;
+  margin-left: 4%;
+  padding-top:2.5%;
+  font-size: 40px;
+  color:black;
+}
+
+.img_logo{
+  position:relative;
+  float: left;
+}
+
+.par_logo{
+  text-align: center;
+  float: left;
+  height: 130px;
+  padding-left: 60px;
+}
+
+.logo{
+  height: 130px;
+  /* opacity: 0.5; */
+}
+
+.Menu{
+  /* border: 1px solid black; */
+  background-color: #fff;
+  /* background-color: black; */
+  border-bottom-left-radius: 80px;
+  float:right;
+  width: 50%;
+  height: 130px;
+  box-shadow: 10px 5px 30px #000808;
+}
+
+.Menu ul{
+  list-style:none;
+  padding-top:20px;
+  padding-left:20%;
+}
+
+.Menu ul li {
+  border-radius: 30px;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  padding: 8px 15px 8px 15px;
+  margin:0 30px;
+  float: left;
+}
+
+.Menu ul li:hover{
+  transition: all 0.5s ease-out;
+  background-color: black;
+  color: white;
+}
+
+/* 갤러리 link 아이콘 css */
+.Icon{
+    margin: 0px;
+    padding-left: 15px;
+    list-style:none;
+    text-align: center;
+
+}
+.Icon li {
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    /* border:1px solid white; */
+    border-radius: 50px;
+    /* background-color: gray; */
+    opacity: 0.5;
+    text-align: center;
+}
+.link_other{
+    position: fixed;
+    top:30vh;
+    display: inline-block;
+    align-items: center;
+}
+.Icon_img{
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .1s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.Icon_img:hover{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
