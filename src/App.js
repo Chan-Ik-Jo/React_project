@@ -2,11 +2,11 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import Header from './layout/Head';
 import Footer from './layout/Footer';
-import Content from './Content';
-import Gallery from './Gallery';
-import Introduce from './Introduce';
-import Map from './Map';
-import NotFound from './NotFound';
+import Content from './component/Content';
+import Gallery from './component/Gallery';
+import Introduce from './component/Introduce';
+import Map from './component/Map';
+import NotFound from './component/NotFound';
 
 const App = () => {
   return (

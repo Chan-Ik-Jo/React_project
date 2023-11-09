@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "./css/Gallery.css";
-import all_sort from "./img/all_sort.png";
-import next from "./img/next.png";
-import prev from "./img/prev.png";
-import first from "./img/first.jpg";
+import "../css/Gallery.css";
+import all_sort from "../img/all_sort.png";
+import next from "../img/next.png";
+import prev from "../img/prev.png";
+import first from "../img/first.jpg";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
