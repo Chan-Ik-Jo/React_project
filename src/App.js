@@ -8,7 +8,7 @@ import Introduce from './Introduce';
 import Map from './Map';
 import NotFound from './NotFound';
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Header />
