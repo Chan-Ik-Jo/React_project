@@ -1,4 +1,4 @@
-import "../css/Head.css";
+import "../css/Header.css";
 import logo from "../img/logo.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -7,7 +7,7 @@ import Introduce from "../img/Introduce.png";
 import Map from "../img/Map.png";
 import School from "../img/School.png";
 
-function Head() {
+function Header() {
   const locationNow = useLocation();
   const url = locationNow.pathname.substr(0, 9);
   if (url === "/Gallery/")
@@ -78,4 +78,4 @@ function Head() {
   );
 }
 
-export default Head;
+export default Header;

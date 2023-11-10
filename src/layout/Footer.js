@@ -5,10 +5,10 @@ function Footer() {
   const url = locationNow.pathname.substr(0, 9);
   if (url === "/Gallery/") return null;
   return (
-    <footer>
+    <div className="footer">
       <hr />
       <h2>This is Footer</h2>
-    </footer>
+    </div>
   );
 }
 

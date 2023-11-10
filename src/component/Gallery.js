@@ -4,13 +4,17 @@ import all_sort from "../img/all_sort.png";
 import next from "../img/next.png";
 import prev from "../img/prev.png";
 import first from "../img/first.jpg";
+import second from "../img/second.jpg";
+import third from "../img/third.jpg";
+import fourth from "../img/fourth.jpg";
+import fifth from "../img/fifth.jpg";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import { EffectCube, Navigation } from "swiper/modules";
 
-function GALLERY() {
+const GALLERY= ()=> {
   return (
     <div className="content">
       <div className="sort">
@@ -50,22 +54,22 @@ function GALLERY() {
             </SwiperSlide>
             <SwiperSlide>
               <Link to="/Gallery/2">
-                <img src="http://placehold.it/334x500" alt="" className="test" />
+                <img src={second} alt="" className="test" />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link to="/Gallery/3">
-                <img src="http://placehold.it/334x500" alt="" className="test" />
+                <img src={third} alt="" className="test" />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link to="/Gallery/4">
-                <img src="http://placehold.it/334x500" alt="" className="test" />
+                <img src={fourth} alt="" className="test" />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link to="/Gallery/5">
-                <img src="http://placehold.it/334x500" alt="" className="test" />
+                <img src={fifth} alt="" className="test" />
               </Link>
             </SwiperSlide>
           </Swiper>
