@@ -1,7 +1,7 @@
 import "../css/Content.css";
 import fifth from "../img/fifth.jpg";
 
-function Content() {
+function HOME() {
   return (
     <div className="body">
       <div className="container">
@@ -20,4 +20,4 @@ function Content() {
   );
 }
 
-export default Content;
+export default HOME;
