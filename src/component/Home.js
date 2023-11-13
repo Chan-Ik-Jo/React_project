@@ -3,7 +3,10 @@ import fifth from "../img/fifth.jpg";
 
 function HOME() {
   return (
-    <div className="body">
+    <motion.div className="body" 
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                exit={{opacity:0}}>
       <div className="container">
         <div className="imgSection">
           <img className="bannerImage" src={fifth} alt="" />
@@ -16,7 +19,7 @@ function HOME() {
           <span className="artistName">Artist : unknown</span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -13,8 +13,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import { EffectCube, Navigation } from "swiper/modules";
+import { motion } from "framer-motion";
 
 const Main= ()=> {
+
   return (
     <div className="content">
       <div className="sort">
@@ -22,7 +24,10 @@ const Main= ()=> {
           <img src={all_sort} alt="" className="all" />
         </div>
       </div>
-      <div className="preView">
+      <motion.div className="preView"
+            initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}>
         <div className="prev">
           <img src={prev} alt="" className="swiper-button-prev" />
         </div>
@@ -48,33 +53,33 @@ const Main= ()=> {
             className="mySwiper"
           >
             <SwiperSlide>
-              <Link to="/Gallery/1">
+              <Link to= '/Gallery/show/0' >
                 <img src={first} alt="" className="test" />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Link to="/Gallery/2">
+              <Link to="/Gallery/show/1">
                 <img src={second} alt="" className="test" />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Link to="/Gallery/3">
+              <Link to="/Gallery/show/2">
                 <img src={third} alt="" className="test" />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Link to="/Gallery/4">
+              <Link to="/Gallery/show/3">
                 <img src={fourth} alt="" className="test" />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Link to="/Gallery/5">
+              <Link to="/Gallery/show/4">
                 <img src={fifth} alt="" className="test" />
               </Link>
             </SwiperSlide>
           </Swiper>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
