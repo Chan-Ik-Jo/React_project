@@ -8,6 +8,7 @@ import SHOW from "./Gallery_component/Show";
 import Gallery from "./component/Gallery";
 import Introduce from "./component/Introduce";
 import Map from "./component/Map";
+import { AnimatePresence } from "framer-motion";
 
 const App = () => {
   return (
