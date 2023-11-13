@@ -1,12 +1,12 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
-import Header from './layout/Header';
-import Footer from './layout/Footer';
-import Content from './component/Content';
-import Gallery from './component/Gallery';
-import Introduce from './component/Introduce';
-import Map from './component/Map';
-import NotFound from './component/NotFound';
+import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
+import Content from "./component/Content";
+import Gallery from "./component/Gallery";
+import Introduce from "./component/Introduce";
+import Map from "./component/Map";
+import NotFound from "./component/NotFound";
 
 const App = () => {
   return (
@@ -23,6 +23,6 @@ const App = () => {
       <Footer />
     </BrowserRouter>
   );
-}
+};
 
 export default App;

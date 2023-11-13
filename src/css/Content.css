@@ -1,26 +1,55 @@
-.body{
-    margin-top: 150px;
-    /* background-color: black; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+.body {
+  margin-top: 150px;
+  /* background-color: black; */
 }
 
+.container {
+  /* background-color: rgb(150, 150, 150); */
+  /* background-image: url("./img/background.jpg"); */
+  width: 100%;
+  height: 80vh;
 
-.container{
-    /* background-color: rgb(150, 150, 150); */
-    /* background-image: url("./img/background.jpg"); */
-    width: 100%;
-    height: 80vh;
-    
-    /* background-color: black; */
-    /* border:1px solid black; */
-    display:flex;
-    justify-content: center;
+  /* background-color: black; */
+  /* border:1px solid black; */
+  display: flex;
+  justify-content: center;
+
+  position: relative;
 }
-.view{
-    width:60%;
-    border:1px solid black;
-    border-radius: 30px;
-    margin: 0px 300px 0px 300px;
-    padding: 10px;
-    height: 100%;
-    background-color: white;
+
+.bannerImage {
+  width: fit-content;
+  height: 100%;
 }
+
+.imgText {
+  color: antiquewhite;
+  position: absolute;
+  top: 85%;
+  left: 37.5%;
+}
+.headLine {
+  font-size: 125%;
+}
+.subLine {
+  font-size: 175%;
+  font-weight: bold;
+}
+.artistName {
+  font-weight: normal;
+}
+
+/*
+안쓰는 css이지만 아카이브용으로.
+*/
+/* .view {
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 0px 300px 0px 300px;
+  padding: 10px;
+  height: 100%;
+  background-color: white;
+} */
