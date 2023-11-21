@@ -8,7 +8,7 @@ import second from "../img/second.jpg";
 import third from "../img/third.jpg";
 import fourth from "../img/fourth.jpg";
 import fifth from "../img/fifth.jpg";
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cube";
@@ -16,18 +16,30 @@ import { EffectCube, Navigation } from "swiper/modules";
 import { motion } from "framer-motion";
 
 const Main= ()=> {
-
+  const [isOpen, setIsOpen] = useState(false);
+  const handleToggle = () => {
+    if (isOpen===true){
+      alert("true");
+      setIsOpen(!isOpen);
+    }
+    else{
+      alert("false");
+      setIsOpen(!isOpen);
+    }
+  };
   return (
     <div className="content">
       <div className="sort">
         <div className="img_view">
-          <img src={all_sort} alt="" className="all" />
+          <img src={all_sort} alt="" className="all" onClick={handleToggle}></img>
         </div>
       </div>
-      <motion.div className="preView"
-            initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}>
+      <motion.div
+        className="preView"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
         <div className="prev">
           <img src={prev} alt="" className="swiper-button-prev" />
         </div>
@@ -53,7 +65,7 @@ const Main= ()=> {
             className="mySwiper"
           >
             <SwiperSlide>
-              <Link to= '/Gallery/show/0' >
+              <Link to="/Gallery/show/0">
                 <img src={first} alt="" className="test" />
               </Link>
             </SwiperSlide>
