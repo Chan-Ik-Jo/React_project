@@ -25,6 +25,7 @@ const App = () => {
           <Route path="/Introduce" element={<Introduce />}></Route>
           <Route path="/Map" element={<Map />}></Route>
           <Route path="*" element={<Navigate replace to="/Home" />} />
+          <Route path="/Gallery" element={<Navigate replace to="/Home" />} />
         </Routes>
         </AnimatePresence>
         <Footer />
