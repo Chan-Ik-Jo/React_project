@@ -1,0 +1,17 @@
+.frame_component{
+    display: flex;
+}
+.img_Frame{
+    margin: 30px;
+}
+.img_Frame {
+  margin-top: 5px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.img_Frame:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

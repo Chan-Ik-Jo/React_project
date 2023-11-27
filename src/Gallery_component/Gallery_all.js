@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../css/test.css";
+import "../css/all_img.css";
 import React from "react";
 import "swiper/css";
 import "swiper/css/effect-cube";

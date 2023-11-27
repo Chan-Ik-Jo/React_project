@@ -1,0 +1,101 @@
+iframe{
+    margin-top: 3px;
+    width: 1000px;
+    height: 500px;
+    border: 0px solid;   
+}
+hr{
+    height: 3px;
+    background-color: #cecece;
+    border: 0;
+}
+.title_road{
+    margin-left: 100px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.address_string{
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+}
+.train{
+    color: gray;
+    margin-left: 30px;
+    width: 55%;
+}
+.train img{
+    opacity: 0.8;
+}
+.bus{
+    color: gray;
+    margin-left: 40px;
+    width: 50%;
+}
+.train_name{
+    margin-left: 30px;
+}
+.subway{
+    display: flex;
+    align-items: center;
+}
+.box{
+    color: white;
+    height: 30px;
+    background-color: rgb(185, 37, 185);
+    border-radius: 10px;
+    text-align: center;
+    width: 65px;
+    margin-left: 30px;
+    padding: 2px;
+}
+.subway p{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.busstop{
+    display: flex;
+    align-items: center;
+}
+.busstop img{
+    opacity: 0.8;
+}
+.bus_name{
+    margin-left: 40px;
+}
+.bus_box_2{
+    color: white;
+    background-color: rgb(81, 218, 104);
+    margin-left: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 65px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.bus_box_1{
+    color: white;
+    background-color: #6175F5;
+    margin-left: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 65px;
+    height: 30px;
+}
+.bus_box{
+    display: flex;
+}
+.subway_txt_1{
+    text-align: center;
+    margin: 0px;
+    margin-left: 10px;
+}
+.subway_txt_2{
+    font-size: 19px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
