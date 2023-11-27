@@ -8,14 +8,9 @@ import One from './Gallery_one';
 import All from "./Gallery_all";
 
 const Main= ()=> {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState();
   const handleToggle = () => {
-    if (isOpen===true){
       setIsOpen(!isOpen);
-    }
-    else{
-      setIsOpen(!isOpen);
-    }
   };
   return (
     <div className="content">
@@ -24,8 +19,8 @@ const Main= ()=> {
           <img src={all_sort} alt="" className="all" onClick={handleToggle}></img>
         </div>
       </div>
-      {isOpen && <One />}
-      {!isOpen && <All /> }
+      {!isOpen && <One />}
+      {isOpen && <All /> }
     </div>
   );
 }
