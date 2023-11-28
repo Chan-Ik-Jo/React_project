@@ -31,9 +31,11 @@ hr{
 .bus{
     color: gray;
     margin-left: 40px;
+    
     width: 50%;
 }
 .train_name{
+    margin-top: 5px;
     margin-left: 30px;
 }
 .subway{
@@ -62,6 +64,7 @@ hr{
     opacity: 0.8;
 }
 .bus_name{
+    margin-top: 5px;
     margin-left: 40px;
 }
 .bus_box_2{
