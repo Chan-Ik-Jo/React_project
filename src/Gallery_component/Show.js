@@ -8,15 +8,9 @@ const SHOW = () => {
     const {id} =useParams()
     const data = img_data[id]
     console.log(data)
-<<<<<<< Updated upstream
     const navigate = useNavigate();
     const onClickImg = () => {
       navigate(-1);
-=======
-    const navigate = useNavigate(); //변수 할당시켜서 사용
-    const onClickImg = () => {
-      navigate(-1); // 바로 이전 페이지로 이동, '/main' 등 직접 지정도 당연히 가능
->>>>>>> Stashed changes
     };
     return (
       <div className="show_content">

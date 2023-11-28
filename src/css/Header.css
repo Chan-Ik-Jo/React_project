@@ -116,37 +116,8 @@ header {
   }
   to {
     opacity: 1;
-<<<<<<< Updated upstream
     transform: translateZ(0);
   }
-=======
-    text-align: center;
-    
-}
-.Icon li:nth-child(1){
-  animation: fadeInLeft 3s;
-}
-.Icon li:nth-child(2){
-  animation: fadeInLeft 2.5s;
-}
-.Icon li:nth-child(3){
-  animation: fadeInLeft 2s;
-}
-.Icon li:nth-child(4){
-  animation: fadeInLeft 1.5s;
-}
-
-@keyframes fadeInLeft {
-  0%{
-    opacity: 0;
-    transform: translate3d(-100%,0,0);
-  }
-  to{
-    opacity: 1;
-    transform: translateZ(0);
-  }
-  
->>>>>>> Stashed changes
 }
 .link_other {
   position: fixed;
