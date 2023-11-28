@@ -43,38 +43,41 @@ function Header() {
       </div>
     );
   return (
-    <header className="App-header">
-      <div className="header">
-        <div className="par_logo">
-          <Link to="/Home">
-            <div className="img_logo">
-              <img src={logo} className="logo" alt="" />
-            </div>
-            <div className="text_logo">
-              <strong>Graphite Art</strong> Museum
-            </div>
-          </Link>
+    <div>
+      <div className="header_back"></div>
+      <header className="App-header">
+        <div className="header">
+          <div className="par_logo">
+            <Link to="/Home">
+              <div className="img_logo">
+                <img src={logo} className="logo" alt="" />
+              </div>
+              <div className="text_logo">
+                <strong>Graphite Art</strong> Museum
+              </div>
+            </Link>
+          </div>
+          <div className="Menu">
+            <nav>
+              <ul>
+                <Link to="/Home">
+                  <li>HOME</li>
+                </Link>
+                <Link to="Gallery/main">
+                  <li>GALLERY</li>
+                </Link>
+                <Link to="/Introduce">
+                  <li>INTRODUCE</li>
+                </Link>
+                <Link to="/Map">
+                  <li>MAP</li>
+                </Link>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div className="Menu">
-          <nav>
-            <ul>
-              <Link to="/Home">
-                <li>HOME</li>
-              </Link>
-              <Link to="Gallery/main">
-                <li>GALLERY</li>
-              </Link>
-              <Link to="/Introduce">
-                <li>INTRODUCE</li>
-              </Link>
-              <Link to="/Map">
-                <li>MAP</li>
-              </Link>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 }
 

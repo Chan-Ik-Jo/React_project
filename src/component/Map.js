@@ -34,6 +34,7 @@ function MAP() {
                 <p className="subway_txt">발산역 3번출구에서 도보 약 10분</p>
               </div>
             </div>
+            <div className="line"></div>
             <div className="bus">
               <p className="bus_name">버스</p>
               <div className="busstop">

@@ -10,7 +10,7 @@ hr{
     border: 0;
 }
 .title_road{
-    margin-left: 100px;
+    /* margin-left: 100px; */
     font-weight: bold;
     font-size: 25px;
 }
@@ -18,6 +18,7 @@ hr{
     display: flex;
     font-weight: bold;
     font-size: 20px;
+    /* margin: */
 }
 .train{
     color: gray;
@@ -92,10 +93,21 @@ hr{
     margin-left: 10px;
 }
 .subway_txt_2{
-    font-size: 19px;
+    font-size: 18px;
     text-align: center;
     margin: 0px;
     margin-top: 10px;
     margin-left: 10px;
-
+}
+.line{
+    margin-top: 30px;
+    margin-left: 20px;
+    border: 1px solid #818181;
+    height: 80%px;
+}
+.map_container{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 45px;
+    box-shadow:0 0px 10px rgba(0, 0, 0, 0.8);
 }
