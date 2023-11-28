@@ -8,6 +8,7 @@ function Footer() {
     <div className="footer">
       <hr />
       <h2>This is Footer</h2>
+
     </div>
   );
 }

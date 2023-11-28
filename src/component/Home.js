@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import "../css/Content.css";
 import fifth from "../img/fifth.jpg";
+import {motion} from "framer-motion";
+
 function HOME() {
   return (
     <motion.div className="body" 
