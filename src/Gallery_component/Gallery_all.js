@@ -18,31 +18,81 @@ const All = () => {
       className="img_component"
     >
       <div className="frame_component">
-          <div className="img_Frame">
-            <Link to="/Gallery/show/0">
-              <img src={first} alt="" className="test" />
-            </Link>
-          </div>
-          <div className="img_Frame">
-            <Link to="/Gallery/show/1">
-              <img src={second} alt="" className="test" />
-            </Link>
-          </div>
-          <div className="img_Frame">
-            <Link to="/Gallery/show/2">
-              <img src={third} alt="" className="test" />
-            </Link>
-          </div>
-          <div className="img_Frame">
-            <Link to="/Gallery/show/3">
-              <img src={fourth} alt="" className="test" />
-            </Link>
-          </div>
-          <div className="img_Frame">
-            <Link to="/Gallery/show/4">
-              <img src={fifth} alt="" className="test" />
-            </Link>
-          </div>
+        <div className="flip-box">
+          <Link Link to="/Gallery/show/0">
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <img src={first} alt="" className="test" />
+              </div>
+              <div className="flip-box-back">
+                <div>
+                  <h2>The Starry Night</h2>
+                  <p>Vincent van Gogh</p>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="flip-box">
+          <Link to="/Gallery/show/1">
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <img src={second} alt="" className="test" />
+              </div>
+              <div className="flip-box-back">
+                <div>
+                  <h2>The Scream of Nature</h2>
+                  <p>Edvard Munch</p>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="flip-box">
+          <Link to="/Gallery/show/2">
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <img src={third} alt="" className="test" />
+              </div>
+              <div className="flip-box-back">
+                <div>
+                  <h2>Happy Tears</h2>
+                  <p>Roy Fox Lichtenstein</p>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="flip-box">
+          <Link to="/Gallery/show/3">
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <img src={fourth} alt="" className="test" />
+              </div>
+              <div className="flip-box-back">
+                <div>
+                  <h2>Color itself</h2>
+                  <p>Hyangmi Lee</p>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="flip-box">
+          <Link to="/Gallery/show/4">
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <img src={fifth} alt="" className="test" />
+              </div>
+              <div className="flip-box-back">
+                <div>
+                  <h2>Monna Lisa</h2>
+                  <p>Leonardo da Vinci</p>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
     </motion.div>
   );

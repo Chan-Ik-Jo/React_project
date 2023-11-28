@@ -1,4 +1,4 @@
-import "../css/Header.css";
+import "../css/Header.scss";
 import logo from "../img/logo.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -10,6 +10,19 @@ import School from "../img/School.png";
 function Header() {
   const locationNow = useLocation();
   const url = locationNow.pathname.substr(0, 9);
+  
+  const Text = ({ value }) => (
+    <div className="text">
+      {value.split("").map((char, i) => (
+        <div className="letter" style={{ "--delay": `${i * 0.2}s` }}>
+          <span className="source">{char}</span>
+          <span className="shadow">{char}</span>
+          <span className="overlay">{char}</span>
+        </div>
+      ))}
+    </div>
+  );
+
   if (url === "/Gallery/")
     return (
       <div className="link">
@@ -53,7 +66,7 @@ function Header() {
                 <img src={logo} className="logo" alt="" />
               </div>
               <div className="text_logo">
-                <strong>Graphite Art</strong> Museum
+                <Text value="GraphiteArtMuseum" />
               </div>
             </Link>
           </div>

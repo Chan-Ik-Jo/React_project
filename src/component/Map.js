@@ -3,7 +3,7 @@ import "../css/Map.css";
 import {motion} from "framer-motion";
 import train from "../img/train.png"
 import bus from "../img/bus.png"
-import {motion} from "framer-motion";
+
 
 function MAP() {
   return (
