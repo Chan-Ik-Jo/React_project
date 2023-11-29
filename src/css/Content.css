@@ -208,6 +208,9 @@ path{
   background-color: #FFF612;
   color: black;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* box-shadow: 0 5px 10px black; */
   
 }
@@ -225,6 +228,9 @@ path{
   background-color: #000000;
   color: black;
   border-radius: 20px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
   /* box-shadow: 0 5px 10px black; */
   
 }
@@ -237,23 +243,31 @@ path{
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .box_flip_front_3 {
   background-color: #FF2424;
   color: black;
   border-radius: 20px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* box-shadow: 0 5px 10px black; */
   
 }
 .box_flip_back_3{
-  background-color: #ED0000;
+  background-color: #DB0000;
   color: black;
   transform: rotateY(180deg);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 .introduce_box{
@@ -277,7 +291,31 @@ path{
   /* align-items: center; */
   text-align: center;
   padding-top: 30px;
+  display: grid;
+  place-items: center;
 }
+
 .box_1_text h2{
   margin: 0px;
+}
+.box_flip_front_1{
+  color: #fff;
+  
+}
+.box_flip_back_1{
+  color: #fff;
+}
+.box_flip_front_2{
+  color: #fff;
+  
+}
+.box_flip_back_2{
+  color: #fff;
+}
+.box_flip_front_3{
+  color: #fff;
+  
+}
+.box_flip_back_3{
+  color: #fff;
 }
