@@ -134,7 +134,7 @@ path{
     left:0px;
     width: 100%;
     height: 100%;
-    background-color: rgb(0,0,0,0.4);
+    background-color: rgb(0,0,0,0.5);
   border-radius: 20px;
 
 }
@@ -205,7 +205,9 @@ path{
   backface-visibility: hidden;
 }
 .box_flip_front_1 {
-  background-color: #FFF612;
+  /* background-color: rgb(255,246,18); */
+  background-image: url(../img/fifth.jpg);
+  background-size: cover;
   color: black;
   border-radius: 20px;
   display: flex;
@@ -214,8 +216,57 @@ path{
   /* box-shadow: 0 5px 10px black; */
   
 }
+.box_flip_front_1::before,.box_flip_front_2::before,.box_flip_front_3::before{
+    position: absolute;
+    content: "";
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.5);
+  border-radius: 20px;
+}
+/* .box_flip_back_1::before,.box_flip_back_2::before,.box_flip_back_3::before{
+    position: absolute;
+    content: "";
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+  border-radius: 20px;
+} */
+.box_flip_front_1_text{
+  top: 450px;
+  left: 20px;
+  color: white;
+  position: absolute;
+    text-align: center;
+  padding-top: 30px;
+  display: grid;
+  place-items: center;
+}
+.box_flip_front_2_text{
+  right: 50px;
+  color: white;
+  position: absolute;
+    text-align: center;
+  padding-top: 30px;
+  display: grid;
+  place-items: center;
+}
+.box_flip_front_3_text{
+  left: 20px;
+  color: white;
+  position: absolute;
+  text-align: center;
+  padding-top: 30px;
+  display: grid;
+  place-items: center;
+}
 .box_flip_back_1 {
-  background-color: #EDD200;
+  background-color: rgba(237,210,0,3);
+  /* filter : brightness(0.4); 밝기 결정 */
   color: black;
   transform: rotateY(180deg);
   /* box-shadow: 0 5px 10px black; */
@@ -223,9 +274,33 @@ path{
   border-radius: 20px;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.box_flip_back_1 h2{
+  position: absolute;
+  margin-left: 5px;
+  margin-right: 5px;
+  top: 470px;
+  font-size: 25px;
+}
+.box_flip_back_2 h2{
+  position: absolute;
+  right: 30px;
+  font-size: 20px;
+}
+.box_flip_back_3 h2{
+  margin: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: absolute;
+  font-size: 20px;
 }
 .box_flip_front_2 {
   background-color: #000000;
+  background-image: url(../img/first.jpg);
+  background-size: cover;
+
   color: black;
   border-radius: 20px;
     display: flex;
@@ -234,6 +309,7 @@ path{
   /* box-shadow: 0 5px 10px black; */
   
 }
+
 .box_flip_back_2 {
   background-color: #5A5A5A;
   color: black;
@@ -249,6 +325,7 @@ path{
 }
 .box_flip_front_3 {
   background-color: #FF2424;
+  background-image: url(../img/third.jpg);
   color: black;
   border-radius: 20px;
   display: flex;
@@ -268,7 +345,6 @@ path{
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .introduce_box{
   font-size: 17px;
