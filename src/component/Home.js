@@ -12,28 +12,14 @@ function HOME() {
       exit={{ opacity: 0 }}
     >
       <div className="container">
-        {/* <div className="imgSection">
-          <img className="bannerImage" src={fifth} alt="" />
-        </div>
-        <div className="imgText">
-          <span className="headLine">Fifth</span>
-          <br />
-          <span className="subLine">The flower who has made</span>
-          <br />
-          <span className="artistName">Artist : unknown</span>
-        </div> */}
         <div className="p">
-          <svg
-            class="stroke-animation"
-            // viewBox="0 0 1000 1000"
-            style={{ backgroundColor: "white" }}
-          >
+          <svg className="stroke-animation">
             <path
               className="per"
               stroke="black"
               stroke-width="7"
               fill="transparent"
-              d="M 800 0 V 0 795"
+              d="M 800 0 V 0 792"
             />
             <path
               className="horizon"
@@ -45,15 +31,37 @@ function HOME() {
           </svg>
         </div>
         <div className="c">
-          <div className="box_1">
+          <div className="box1_par">
+            <div className="box_1"></div>
+            <div className="box_1_text">
+              <h2>GraphiteArt</h2>
+              <h2>Museum</h2>
+            </div>
           </div>
-          <div className="box_2">
+          <div className="box2_par">
+            <div className="box_2">
+              <div className="box_flip_inner">
+                <div className="box_flip_front_1"></div>
+                <div className="box_flip_back_1"></div>
+              </div>
+            </div>
           </div>
-          <div className="box_3">
+          <div className="box3_par">
+            <div className="box_3">
+              <div className="box_flip_inner">
+                <div className="box_flip_front_2"></div>
+                <div className="box_flip_back_2"></div>
+              </div>
+            </div>
           </div>
-          <div className="box_4">
+          <div className="box4_par">
+            <div className="box_4">
+              <div className="box_flip_inner">
+                <div className="box_flip_front_3"></div>
+                <div className="box_flip_back_3"></div>
+              </div>
+            </div>
           </div>
-
         </div>
       </div>
     </motion.div>

@@ -2,7 +2,6 @@
 
 
 .body {
-  margin-top: 150px;
   /* background-color: black; */
 }
 
@@ -10,22 +9,13 @@
   /* background-color: rgb(150, 150, 150); */
   /* background-image: url("./img/background.jpg"); */
   width: 100%;
-  /* height: 85vh; */
-
-  /* background-color: black; */
-  /* border:1px solid black; */
+  height: 85vh;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   position: relative;
 
-  font-size: 20px;
-  font-style: oblique;
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+
 }
 
 .bannerImage {
@@ -49,68 +39,46 @@
 .artistName {
   font-weight: normal;
 }
-
-/*
-안쓰는 css이지만 아카이브용으로.
-*/
-/* .view {
-  width: 60%;
-  border: 1px solid black;
-  border-radius: 30px;
-  margin: 0px 300px 0px 300px;
-  padding: 10px;
-  height: 100%;
-  background-color: white;
-} */
 svg{
   width: 55vw;
   height: 100%;
+  /* background-color: white; */
+}
+path{
+  box-shadow: inset 0 0 0px;
+
 }
 .per {
   z-index: -1;
   stroke-dasharray: 840;
-  animation: stroke-per 12s forwards;
+  animation: stroke-per 3s forwards;
 } 
  @keyframes stroke-per {
-  0%{
-    stroke-dashoffset: 840;
-  }
-  50%{
-    stroke-dashoffset: 0;
-  }
-  /* 100%{
-    stroke-dashoffset: -840;
-  } */
-  /* from{
+  from{
+    opacity: 0;
     stroke-dashoffset: 840;
   }
   to{
     stroke-dashoffset: 0;
-  } */
+    opacity: 0.8;
+  }
 }
 
 .horizon {
   z-index: -1;
   stroke-dasharray: 1050;
-  animation: stroke-hor 12s forwards;
+  animation: stroke-hor 3s forwards;
+  
 } 
  @keyframes stroke-hor {
-  0%{
-    stroke-dashoffset: 1050;
-  }
-  50%{
-    stroke-dashoffset: 0;
-    opacity: 1;
-  }
-  /* 100%{
-    stroke-dashoffset: -1050;
-  } */
-    /* from{
-    stroke-dashoffset: 1050;
+  from{
+    opacity: 0;
+    stroke-dashoffset: 840;
   }
   to{
     stroke-dashoffset: 0;
-  } */
+    opacity: 0.8;
+  }
 }
 .p{
   position:relative;
@@ -124,47 +92,192 @@ svg{
   justify-content: space-between;
   flex-wrap: wrap; 
 }
-@keyframes test{
+@keyframes div_ani_under{
   from{
     opacity: 0;
   }
   to{
     opacity: 1;
+
   }
 }
-
-.box_1{
+@keyframes div_ani_top{
+  from{
+    opacity: 0;
+    transform: translate3d(0, -5%, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+.box1_par{
   width:785px;
   height: 590px;
-  border: 1px solid black;
-  opacity: 0;
-  animation: test 6s forwards;
-  
+  position: relative;
+
+  animation: div_ani_top 6s forwards;
+}
+.box_1{
+  position: absolute;
+  width:785px;
+  height: 590px;
+  background-image: url(../img/back.jpg);
+  border-radius: 20px;
+  /* opacity: 0.6; */
+  z-index: -1;
+}
+.box_1::before{
+    position: absolute;
+    content: "";
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.4);
+  border-radius: 20px;
+
+}
+.box1_par p{
+  margin: 0px;
+  color: white;
 }
 .box_2{
   width:240px;
   height: 590px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  /* background-color: rgba(248, 91, 91, 0.747); */
+  background-color: white;
   opacity: 0;
-  animation: test 6s forwards;
+  animation: div_ani_top 6s forwards;
   animation-delay: 1s;
+  background-color: transparent;
+  perspective: 1000px;
+  
+  /* box-shadow: 0 0 5px #333; */
 
 }
 .box_3{
   width:785px;
   height: 180px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  background-color: white;
   opacity: 0;
-  animation: test 6s forwards;
-  animation-delay: 2s;
+  animation: div_ani_under 6s forwards;
+  animation-delay: 1.5s;
+  background-color: transparent;
+  perspective: 1000px;
+  /* box-shadow: 0 0 5px #333; */
 
 }
 .box_4{
   width:240px;
   height: 180px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  background-color: white;
   opacity: 0;
-  animation: test 6s forwards;
-  animation-delay: 3s;
+  animation: div_ani_under 6s forwards;
+  animation-delay: 2s;
+  background-color: transparent;
+  perspective: 1000px;
+  /* box-shadow: 0 0 5px #333; */
 
+}
+.box_flip_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  
+  transform-style: preserve-3d;
+}
+.box_2:hover .box_flip_inner, .box_3:hover .box_flip_inner, .box_4:hover .box_flip_inner {
+  transform: rotateY(180deg);
+}
+.box_flip_front_1, .box_flip_back_1, .box,.box_flip_front_2,
+.box_flip_back_2,.box_flip_front_3,
+.box_flip_back_3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.box_flip_front_1 {
+  background-color: #FFF612;
+  color: black;
+  border-radius: 20px;
+  /* box-shadow: 0 5px 10px black; */
+  
+}
+.box_flip_back_1 {
+  background-color: #EDD200;
+  color: black;
+  transform: rotateY(180deg);
+  /* box-shadow: 0 5px 10px black; */
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.box_flip_front_2 {
+  background-color: #000000;
+  color: black;
+  border-radius: 20px;
+  /* box-shadow: 0 5px 10px black; */
+  
+}
+.box_flip_back_2 {
+  background-color: #5A5A5A;
+  color: black;
+  transform: rotateY(180deg);
+  /* box-shadow: 0 5px 10px black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.box_flip_front_3 {
+  background-color: #FF2424;
+  color: black;
+  border-radius: 20px;
+
+  /* box-shadow: 0 5px 10px black; */
+  
+}
+.box_flip_back_3{
+  background-color: #ED0000;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+
+}
+.introduce_box{
+  font-size: 17px;
+  /* font-style: oblique; */
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.box_1_text{
+  top: 400px;
+  right: 20px;
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  /* display: inline; */
+  /* align-items: center; */
+  text-align: center;
+  padding-top: 30px;
+}
+.box_1_text h2{
+  margin: 0px;
 }
