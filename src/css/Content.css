@@ -53,3 +53,109 @@
   height: 100%;
   background-color: white;
 } */
+svg{
+  width: 55vw;
+  height: 100%;
+}
+.per {
+  z-index: -1;
+  stroke-dasharray: 840;
+  animation: stroke-per 12s forwards;
+} 
+ @keyframes stroke-per {
+  0%{
+    stroke-dashoffset: 840;
+  }
+  50%{
+    stroke-dashoffset: 0;
+  }
+  /* 100%{
+    stroke-dashoffset: -840;
+  } */
+  /* from{
+    stroke-dashoffset: 840;
+  }
+  to{
+    stroke-dashoffset: 0;
+  } */
+}
+
+.horizon {
+  z-index: -1;
+  stroke-dasharray: 1050;
+  animation: stroke-hor 12s forwards;
+} 
+ @keyframes stroke-hor {
+  0%{
+    stroke-dashoffset: 1050;
+  }
+  50%{
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  /* 100%{
+    stroke-dashoffset: -1050;
+  } */
+    /* from{
+    stroke-dashoffset: 1050;
+  }
+  to{
+    stroke-dashoffset: 0;
+  } */
+}
+.p{
+  position:relative;
+  /* width: 55%;/ */
+}
+.c{
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+@keyframes test{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.box_1{
+  width:785px;
+  height: 590px;
+  border: 1px solid black;
+  opacity: 0;
+  animation: test 6s forwards;
+  
+}
+.box_2{
+  width:240px;
+  height: 590px;
+  border: 1px solid black;
+  opacity: 0;
+  animation: test 6s forwards;
+  animation-delay: 1s;
+
+}
+.box_3{
+  width:785px;
+  height: 180px;
+  border: 1px solid black;
+  opacity: 0;
+  animation: test 6s forwards;
+  animation-delay: 2s;
+
+}
+.box_4{
+  width:240px;
+  height: 180px;
+  border: 1px solid black;
+  opacity: 0;
+  animation: test 6s forwards;
+  animation-delay: 3s;
+
+}
