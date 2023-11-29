@@ -346,16 +346,7 @@ path{
   align-items: center;
   justify-content: center;
 }
-.introduce_box{
-  font-size: 17px;
-  /* font-style: oblique; */
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
+
 
 .box_1_text{
   top: 400px;
