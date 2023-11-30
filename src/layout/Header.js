@@ -63,7 +63,6 @@ function Header() {
           <div className="par_logo">
             <Link to="/Home">
               <div className="img_logo">
-                <img src={logo} className="logo" alt="" />
               </div>
               <div className="text_logo">
                 <Text value="GraphiteArtMuseum" />

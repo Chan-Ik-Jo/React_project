@@ -9,7 +9,6 @@ function INTRODUCE() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      Graphite Art Museum
       <div className="container">
         <div className="introduce_box">
           <div className="intro_head">
