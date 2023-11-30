@@ -15,7 +15,7 @@ function MAP() {
     >
       <div className="container">
         <div className="map_container">
-          <p className="title_road">오시는 길</p>
+          <p className="title_road">Way to come</p>
           <hr />
           <div className="map_div">
             <iframe
@@ -31,11 +31,11 @@ function MAP() {
               <p className="train_name">지하철</p>
               <div className="subway">
                 <img src={train} alt="" />
-                <div className="box">5호선</div>
+                <div className="train_box">5호선</div>
                 <p className="subway_txt">발산역 3번출구에서 도보 약 10분</p>
               </div>
             </div>
-            <div className="line"></div>
+            <div className="line_div"></div>
             <div className="bus">
               <p className="bus_name">버스</p>
               <div className="busstop">

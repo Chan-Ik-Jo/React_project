@@ -149,7 +149,7 @@ path{
   /* background-color: rgba(248, 91, 91, 0.747); */
   background-color: white;
   opacity: 0;
-  animation: div_ani_top 6s forwards;
+  animation: div_ani_top 5s forwards;
   animation-delay: 1s;
   background-color: transparent;
   perspective: 1000px;
@@ -163,7 +163,7 @@ path{
   /* border: 1px solid black; */
   background-color: white;
   opacity: 0;
-  animation: div_ani_under 6s forwards;
+  animation: div_ani_under 4.5s forwards;
   animation-delay: 1.5s;
   background-color: transparent;
   perspective: 1000px;
@@ -176,7 +176,7 @@ path{
   /* border: 1px solid black; */
   background-color: white;
   opacity: 0;
-  animation: div_ani_under 6s forwards;
+  animation: div_ani_under 4s forwards;
   animation-delay: 2s;
   background-color: transparent;
   perspective: 1000px;
@@ -226,16 +226,6 @@ path{
     background-color: rgb(0,0,0,0.5);
   border-radius: 20px;
 }
-/* .box_flip_back_1::before,.box_flip_back_2::before,.box_flip_back_3::before{
-    position: absolute;
-    content: "";
-    top:0px;
-    left:0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.2);
-  border-radius: 20px;
-} */
 .box_flip_front_1_text{
   top: 450px;
   left: 20px;

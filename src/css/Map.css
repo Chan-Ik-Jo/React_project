@@ -4,7 +4,7 @@ iframe{
     height: 500px;
     border: 0px solid;   
 }
-hr{
+.map .map_container hr{
     height: 3px;
     background-color: #cecece;
     border: 0;
@@ -39,11 +39,12 @@ hr{
     margin-top: 5px;
     margin-left: 30px;
 }
+
 .subway{
     display: flex;
     align-items: center;
 }
-.box{
+.train_box{
     color: white;
     height: 30px;
     background-color: rgb(185, 37, 185);
@@ -103,11 +104,11 @@ hr{
     margin-top: 10px;
     margin-left: 10px;
 }
-.line{
+.line_div{
     margin-top: 30px;
     margin-left: 20px;
     border: 1px solid #818181;
-    height: 80%;
+    height: 150px;
 }
 .map_container{
     padding-left: 20px;
